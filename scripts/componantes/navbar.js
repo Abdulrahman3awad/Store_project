@@ -8,7 +8,7 @@ function searchBar() {
         children:[
             comket.label({
                 for:"searchInp",
-                children:[comket.img({src:"../../media/search.svg"}),]
+                children:[comket.img({src:"/media/search.svg"}),]
             }),
             comket.input({id:"searchInp",type:"text"})
         ]
@@ -20,7 +20,7 @@ function icons() {
         children:[
             comket.Element("ion-icon",{name:'notifications'}),
             comket.Element("ion-icon",{name:'basket', onclick:()=>{OpenProfile()}}),
-            comket.img({src:"../../media/me.jpg"})
+            comket.img({src:"/media/me.jpg"})
         ]
     })
 }

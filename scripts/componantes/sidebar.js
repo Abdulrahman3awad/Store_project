@@ -5,8 +5,8 @@ function logo() {
     return comket.div({
         class:"logo",
         children:[
-            comket.img({src:"../../media/logo_1.svg"}),
-            comket.img({src:"../../media/logo_2.svg"})
+            comket.img({src:"/media/logo_1.svg"}),
+            comket.img({src:"/media/logo_2.svg"})
         ]
     })
 }
@@ -21,11 +21,11 @@ function madeBtnMenu(object) {
 }
 function menuTop() {
     let menuArray = [
-        {icon: "../../media/home.png", title: "Home"},
-        {icon: "../../media/profile.svg", title: "Profile"},
-        // {icon: "../../media/search.svg", title: "Search"},
-        {icon: "../../media/favorite.svg", title: "Favorite"},
-        // {icon: "../../media/balance.svg", title: "Balance"},
+        {icon: "/media/home.png", title: "Home"},
+        {icon: "/media/profile.svg", title: "Profile"},
+        // {icon: "/media/search.svg", title: "Search"},
+        {icon: "/media/favorite.svg", title: "Favorite"},
+        // {icon: "/media/balance.svg", title: "Balance"},
     ]
     let buttons = [];  
     for (let object of menuArray) {
@@ -41,17 +41,17 @@ function menuTop() {
 }
 function menuBottom() {
     let menuArray = [
-        {icon: "../../media/Computer.svg", title: "Computer"},
-        {icon: "../../media/headphones.svg", title: "Game Headphones"},
-        {icon: "../../media/VR.svg", title: "VR Glasses"},
-        {icon: "../../media/mouse.svg", title: "Mouse Gaming"},
-        {icon: "../../media/keyboard.svg", title: "Keyboard"},
+        {icon: "/media/Computer.svg", title: "Computer"},
+        {icon: "/media/headphones.svg", title: "Game Headphones"},
+        {icon: "/media/VR.svg", title: "VR Glasses"},
+        {icon: "/media/mouse.svg", title: "Mouse Gaming"},
+        {icon: "/media/keyboard.svg", title: "Keyboard"},
     ]
     let buttons = [];  
     buttons.push(
         comket.div({
             class:"category",
-            children:[comket.span({text:"Category"}),comket.img({src:"../../media/arrow.svg"}) ]
+            children:[comket.span({text:"Category"}),comket.img({src:"/media/arrow.svg"}) ]
         })
     )
     for (let object of menuArray) {

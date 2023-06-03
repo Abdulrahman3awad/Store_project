@@ -3,9 +3,9 @@ import Swiper, {Autoplay, Pagination, Navigation, } from "swiper"
 
 
 let dataSwiper = [
-    { title: "MacBook Pro", category: "Computer", text: 'VR box 360 original complete geme.VR gaming complete set of 2 remotes.', img: "../../media/products/computer_1.png" },
-    { title: "Oculus VR", category: "Virtual Reality", text: 'VR box 360 original complete geme.VR gaming complete set of 2 remotes.', img: "../../media/unsplash_Zf0mPf4lG-U.svg" },
-    { title: "SoDo SD", category: "Headphones", text: 'VR box 360 original complete geme.VR gaming complete set of 2 remotes.', img: "../../media/products/headphone_4.png" },
+    { title: "MacBook Pro", category: "Computer", text: 'VR box 360 original complete geme.VR gaming complete set of 2 remotes.', img: "/media/products/computer_1.png" },
+    { title: "Oculus VR", category: "Virtual Reality", text: 'VR box 360 original complete geme.VR gaming complete set of 2 remotes.', img: "/media/unsplash_Zf0mPf4lG-U.svg" },
+    { title: "SoDo SD", category: "Headphones", text: 'VR box 360 original complete geme.VR gaming complete set of 2 remotes.', img: "/media/products/headphone_4.png" },
 ]
 
 function madeSlide(object) {
