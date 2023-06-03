@@ -1,0 +1,154 @@
+@import url(./cardData.css);
+.products{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 45px;
+    /* z-index: 100; */
+}
+.products .productsHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.products .productsHeader h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 107%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+.products .productsHeader .sortingBtns{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.products .productsHeader .sortingBtns button{
+    padding: 8px 24px;
+    border: 1px solid #8A8A8A;
+    border-radius: 16px;
+    outline: 0px;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .2s;
+}
+.products .productsHeader .sortingBtns button.active{
+    background-color: #DA00FE;
+}
+.products .productsHeader .sortingBtns button:nth-last-of-type(1){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid #DA00FE;
+}
+.products .productsHeader .sortingBtns button:nth-last-of-type(1) > img{
+    width: 14px;
+}
+/* @@@ CARDS STYLE @@@ */
+.products .cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.products .cards .card{
+    min-width: 220px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    background: #323232;
+    border-radius: 8px;
+    margin: 30px 0px;
+    position: relative;
+    animation-name: cardAnimation;
+    animation-duration: .2s;
+}
+.products .cards .card.popUp{
+    position: static;
+}
+@keyframes cardAnimation {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.products .cards .card > div:nth-of-type(1){
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.products .cards .card > div:nth-of-type(1) > img{
+    width: auto;
+    height: 110%;
+    position: absolute;
+    bottom: 15px;
+}
+.products .cards .card > h3{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.products .cards .card > p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 12px;
+    color: #8A8A8A;
+}
+.products .cards .card > span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    color: #DA00FE;
+}
+.products .cards .card > button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: transparent;
+    border: 0px;outline: 0px;
+    cursor: pointer;
+}
+.products .cards .card > button span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+    color: #FFFFFF;
+
+}
+.products .cards .card > button > ion-icon{
+    font-size: 27px;
+    color: #bbbbbb;
+    transition: .2s;
+}
+.products .cards .card.added > button > ion-icon{
+    color: #DA00FE;
+}

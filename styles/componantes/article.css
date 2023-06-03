@@ -1,0 +1,24 @@
+@import url(./navbar.css);
+@import url(./header.css);
+@import url(./products.css);
+
+
+article{
+    width: calc(100% - 280px);
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 90px 70px ;
+    background-color: #242424;
+}
+.artContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+}
